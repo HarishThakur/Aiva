@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D8F19FB1C0C2DF8004DC4F2 /* Rest_API.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F19FA1C0C2DF8004DC4F2 /* Rest_API.m */; };
+		7D918F551C049526003C996D /* FacebookSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D918F541C049526003C996D /* FacebookSignInViewController.m */; };
+		7DC1898A1C045C6B005B8EB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189891C045C6B005B8EB9 /* main.m */; };
+		7DC1898D1C045C6B005B8EB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1898C1C045C6B005B8EB9 /* AppDelegate.m */; };
+		7DC189901C045C6B005B8EB9 /* LoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1898F1C045C6B005B8EB9 /* LoginScreenViewController.m */; };
+		7DC189931C045C6B005B8EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189911C045C6B005B8EB9 /* Main.storyboard */; };
+		7DC189951C045C6B005B8EB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189941C045C6B005B8EB9 /* Images.xcassets */; };
+		7DC189981C045C6B005B8EB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189961C045C6B005B8EB9 /* LaunchScreen.xib */; };
+		7DC189A41C045C6B005B8EB9 /* AivaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189A31C045C6B005B8EB9 /* AivaTests.m */; };
+		7DC189DD1C04641E005B8EB9 /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189DB1C04641E005B8EB9 /* Common */; };
+		7DC189DE1C04641E005B8EB9 /* Welcomescreen in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189DC1C04641E005B8EB9 /* Welcomescreen */; };
+		7DC189E21C046F30005B8EB9 /* EmailSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E11C046F30005B8EB9 /* EmailSignInViewController.m */; };
+		7DC189E61C04756C005B8EB9 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E51C04756C005B8EB9 /* ForgotPasswordViewController.m */; };
+		7DC189EA1C047B77005B8EB9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E91C047B77005B8EB9 /* SignUpViewController.m */; };
+		7DE2730E1C06D659008AB767 /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2730D1C06D659008AB767 /* UserInformation.m */; };
+		7DE46B661C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE46B651C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DC1899E1C045C6B005B8EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DC1897C1C045C6B005B8EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DC189831C045C6B005B8EB9;
+			remoteInfo = Aiva;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D8F19F91C0C2DF8004DC4F2 /* Rest_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rest_API.h; sourceTree = "<group>"; };
+		7D8F19FA1C0C2DF8004DC4F2 /* Rest_API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rest_API.m; sourceTree = "<group>"; };
+		7D918F531C049526003C996D /* FacebookSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookSignInViewController.h; sourceTree = "<group>"; };
+		7D918F541C049526003C996D /* FacebookSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookSignInViewController.m; sourceTree = "<group>"; };
+		7DC189841C045C6B005B8EB9 /* Aiva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC189881C045C6B005B8EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC189891C045C6B005B8EB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DC1898B1C045C6B005B8EB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DC1898C1C045C6B005B8EB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DC1898E1C045C6B005B8EB9 /* LoginScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginScreenViewController.h; sourceTree = "<group>"; };
+		7DC1898F1C045C6B005B8EB9 /* LoginScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginScreenViewController.m; sourceTree = "<group>"; };
+		7DC189921C045C6B005B8EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DC189941C045C6B005B8EB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7DC189971C045C6B005B8EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7DC1899D1C045C6B005B8EB9 /* AivaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AivaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC189A21C045C6B005B8EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC189A31C045C6B005B8EB9 /* AivaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AivaTests.m; sourceTree = "<group>"; };
+		7DC189DB1C04641E005B8EB9 /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
+		7DC189DC1C04641E005B8EB9 /* Welcomescreen */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Welcomescreen; sourceTree = "<group>"; };
+		7DC189E01C046F2F005B8EB9 /* EmailSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailSignInViewController.h; sourceTree = "<group>"; };
+		7DC189E11C046F30005B8EB9 /* EmailSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSignInViewController.m; sourceTree = "<group>"; };
+		7DC189E41C04756C005B8EB9 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		7DC189E51C04756C005B8EB9 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		7DC189E81C047B77005B8EB9 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		7DC189E91C047B77005B8EB9 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		7DE2730C1C06D659008AB767 /* UserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformation.h; sourceTree = "<group>"; };
+		7DE2730D1C06D659008AB767 /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
+		7DE46B641C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+DefaultHeader.h"; sourceTree = "<group>"; };
+		7DE46B651C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+DefaultHeader.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DC189811C045C6B005B8EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC1899A1C045C6B005B8EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D17BB911C05809200C12FDD /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7DC1898E1C045C6B005B8EB9 /* LoginScreenViewController.h */,
+				7DC1898F1C045C6B005B8EB9 /* LoginScreenViewController.m */,
+			);
+			name = "Login Screen";
+			sourceTree = "<group>";
+		};
+		7D17BB921C05817C00C12FDD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7DC1898B1C045C6B005B8EB9 /* AppDelegate.h */,
+				7DC1898C1C045C6B005B8EB9 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7D8F19F51C0C2785004DC4F2 /* Rest API */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F19F91C0C2DF8004DC4F2 /* Rest_API.h */,
+				7D8F19FA1C0C2DF8004DC4F2 /* Rest_API.m */,
+			);
+			name = "Rest API";
+			sourceTree = "<group>";
+		};
+		7D8F19FC1C0D90EB004DC4F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D17BB911C05809200C12FDD /* Login Screen */,
+				7DC189E71C047B5B005B8EB9 /* Sign Up */,
+				7DC189DF1C046F09005B8EB9 /* Email Sign In */,
+				7DC189E31C04754F005B8EB9 /* Forgot Password */,
+				7D918F521C0494EA003C996D /* Facebook Sign In */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7D8F19FD1C0D97AB004DC4F2 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				7DE2730F1C070B39008AB767 /* Headers */,
+				7D8F19F51C0C2785004DC4F2 /* Rest API */,
+			);
+			name = "Network Services";
+			sourceTree = "<group>";
+		};
+		7D8F19FE1C0D97CD004DC4F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189911C045C6B005B8EB9 /* Main.storyboard */,
+				7DC189961C045C6B005B8EB9 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7D8F19FF1C0D98B5004DC4F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189DA1C0463FD005B8EB9 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D918F521C0494EA003C996D /* Facebook Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				7D918F531C049526003C996D /* FacebookSignInViewController.h */,
+				7D918F541C049526003C996D /* FacebookSignInViewController.m */,
+			);
+			name = "Facebook Sign In";
+			sourceTree = "<group>";
+		};
+		7DC1897B1C045C6B005B8EB9 = {
+			isa = PBXGroup;
+			children = (
+				7DC189861C045C6B005B8EB9 /* Aiva */,
+				7DC189A01C045C6B005B8EB9 /* AivaTests */,
+				7DC189851C045C6B005B8EB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DC189851C045C6B005B8EB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189841C045C6B005B8EB9 /* Aiva.app */,
+				7DC1899D1C045C6B005B8EB9 /* AivaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DC189861C045C6B005B8EB9 /* Aiva */ = {
+			isa = PBXGroup;
+			children = (
+				7D17BB921C05817C00C12FDD /* AppDelegate */,
+				7D8F19FD1C0D97AB004DC4F2 /* Network Services */,
+				7DE2730A1C06D592008AB767 /* Modal */,
+				7D8F19FC1C0D90EB004DC4F2 /* Controllers */,
+				7D8F19FE1C0D97CD004DC4F2 /* View */,
+				7DC189871C045C6B005B8EB9 /* Supporting Files */,
+			);
+			path = Aiva;
+			sourceTree = "<group>";
+		};
+		7DC189871C045C6B005B8EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F19FF1C0D98B5004DC4F2 /* Resources */,
+				7DC189881C045C6B005B8EB9 /* Info.plist */,
+				7DC189891C045C6B005B8EB9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DC189A01C045C6B005B8EB9 /* AivaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189A31C045C6B005B8EB9 /* AivaTests.m */,
+				7DC189A11C045C6B005B8EB9 /* Supporting Files */,
+			);
+			path = AivaTests;
+			sourceTree = "<group>";
+		};
+		7DC189A11C045C6B005B8EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189A21C045C6B005B8EB9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DC189DA1C0463FD005B8EB9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189941C045C6B005B8EB9 /* Images.xcassets */,
+				7DC189DB1C04641E005B8EB9 /* Common */,
+				7DC189DC1C04641E005B8EB9 /* Welcomescreen */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7DC189DF1C046F09005B8EB9 /* Email Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189E01C046F2F005B8EB9 /* EmailSignInViewController.h */,
+				7DC189E11C046F30005B8EB9 /* EmailSignInViewController.m */,
+			);
+			name = "Email Sign In";
+			sourceTree = "<group>";
+		};
+		7DC189E31C04754F005B8EB9 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189E41C04756C005B8EB9 /* ForgotPasswordViewController.h */,
+				7DC189E51C04756C005B8EB9 /* ForgotPasswordViewController.m */,
+			);
+			name = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		7DC189E71C047B5B005B8EB9 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				7DC189E81C047B77005B8EB9 /* SignUpViewController.h */,
+				7DC189E91C047B77005B8EB9 /* SignUpViewController.m */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		7DE2730A1C06D592008AB767 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				7DE2730B1C06D625008AB767 /* User Info */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		7DE2730B1C06D625008AB767 /* User Info */ = {
+			isa = PBXGroup;
+			children = (
+				7DE2730C1C06D659008AB767 /* UserInformation.h */,
+				7DE2730D1C06D659008AB767 /* UserInformation.m */,
+			);
+			name = "User Info";
+			sourceTree = "<group>";
+		};
+		7DE2730F1C070B39008AB767 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7DE46B641C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.h */,
+				7DE46B651C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DC189831C045C6B005B8EB9 /* Aiva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DC189A71C045C6B005B8EB9 /* Build configuration list for PBXNativeTarget "Aiva" */;
+			buildPhases = (
+				7DC189801C045C6B005B8EB9 /* Sources */,
+				7DC189811C045C6B005B8EB9 /* Frameworks */,
+				7DC189821C045C6B005B8EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aiva;
+			productName = Aiva;
+			productReference = 7DC189841C045C6B005B8EB9 /* Aiva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DC1899C1C045C6B005B8EB9 /* AivaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DC189AA1C045C6B005B8EB9 /* Build configuration list for PBXNativeTarget "AivaTests" */;
+			buildPhases = (
+				7DC189991C045C6B005B8EB9 /* Sources */,
+				7DC1899A1C045C6B005B8EB9 /* Frameworks */,
+				7DC1899B1C045C6B005B8EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DC1899F1C045C6B005B8EB9 /* PBXTargetDependency */,
+			);
+			name = AivaTests;
+			productName = AivaTests;
+			productReference = 7DC1899D1C045C6B005B8EB9 /* AivaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DC1897C1C045C6B005B8EB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Sourcebits Technologies";
+				TargetAttributes = {
+					7DC189831C045C6B005B8EB9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7DC1899C1C045C6B005B8EB9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7DC189831C045C6B005B8EB9;
+					};
+				};
+			};
+			buildConfigurationList = 7DC1897F1C045C6B005B8EB9 /* Build configuration list for PBXProject "Aiva" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DC1897B1C045C6B005B8EB9;
+			productRefGroup = 7DC189851C045C6B005B8EB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DC189831C045C6B005B8EB9 /* Aiva */,
+				7DC1899C1C045C6B005B8EB9 /* AivaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DC189821C045C6B005B8EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC189931C045C6B005B8EB9 /* Main.storyboard in Resources */,
+				7DC189DE1C04641E005B8EB9 /* Welcomescreen in Resources */,
+				7DC189981C045C6B005B8EB9 /* LaunchScreen.xib in Resources */,
+				7DC189951C045C6B005B8EB9 /* Images.xcassets in Resources */,
+				7DC189DD1C04641E005B8EB9 /* Common in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC1899B1C045C6B005B8EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DC189801C045C6B005B8EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC189901C045C6B005B8EB9 /* LoginScreenViewController.m in Sources */,
+				7DE2730E1C06D659008AB767 /* UserInformation.m in Sources */,
+				7D8F19FB1C0C2DF8004DC4F2 /* Rest_API.m in Sources */,
+				7DC189E21C046F30005B8EB9 /* EmailSignInViewController.m in Sources */,
+				7DC189EA1C047B77005B8EB9 /* SignUpViewController.m in Sources */,
+				7DE46B661C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m in Sources */,
+				7D918F551C049526003C996D /* FacebookSignInViewController.m in Sources */,
+				7DC1898D1C045C6B005B8EB9 /* AppDelegate.m in Sources */,
+				7DC189E61C04756C005B8EB9 /* ForgotPasswordViewController.m in Sources */,
+				7DC1898A1C045C6B005B8EB9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC189991C045C6B005B8EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC189A41C045C6B005B8EB9 /* AivaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DC1899F1C045C6B005B8EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DC189831C045C6B005B8EB9 /* Aiva */;
+			targetProxy = 7DC1899E1C045C6B005B8EB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DC189911C045C6B005B8EB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DC189921C045C6B005B8EB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DC189961C045C6B005B8EB9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DC189971C045C6B005B8EB9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DC189A51C045C6B005B8EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DC189A61C045C6B005B8EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DC189A81C045C6B005B8EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aiva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DC189A91C045C6B005B8EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aiva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7DC189AB1C045C6B005B8EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AivaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aiva.app/Aiva";
+			};
+			name = Debug;
+		};
+		7DC189AC1C045C6B005B8EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AivaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aiva.app/Aiva";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DC1897F1C045C6B005B8EB9 /* Build configuration list for PBXProject "Aiva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC189A51C045C6B005B8EB9 /* Debug */,
+				7DC189A61C045C6B005B8EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DC189A71C045C6B005B8EB9 /* Build configuration list for PBXNativeTarget "Aiva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC189A81C045C6B005B8EB9 /* Debug */,
+				7DC189A91C045C6B005B8EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DC189AA1C045C6B005B8EB9 /* Build configuration list for PBXNativeTarget "AivaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC189AB1C045C6B005B8EB9 /* Debug */,
+				7DC189AC1C045C6B005B8EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DC1897C1C045C6B005B8EB9 /* Project object */;
+}
