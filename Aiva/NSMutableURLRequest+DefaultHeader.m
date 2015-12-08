@@ -19,7 +19,6 @@
     [self addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [self addValue:deviceID forHTTPHeaderField:@"DeviceID"];
     [self addValue:@"1" forHTTPHeaderField:@"DeviceType"];
-    
 }
 
 

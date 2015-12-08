@@ -10,11 +10,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchSceen-image" translatesAutoresizingMaskIntoConstraints="NO" id="X1T-3n-alt">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchSceen-image" translatesAutoresizingMaskIntoConstraints="NO" id="X1T-3n-alt">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="667" id="EdV-bA-p6W"/>
+                        <constraint firstAttribute="width" constant="375" id="Tvk-jb-h9B"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="X1T-3n-alt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="59j-Qq-y8D"/>
+                <constraint firstAttribute="bottom" secondItem="X1T-3n-alt" secondAttribute="bottom" id="fyI-xb-h1t"/>
+                <constraint firstItem="X1T-3n-alt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hsu-1W-0DQ"/>
+                <constraint firstAttribute="trailing" secondItem="X1T-3n-alt" secondAttribute="trailing" id="yD6-j2-m1y"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="548" y="455"/>

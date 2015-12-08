@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D8F19FB1C0C2DF8004DC4F2 /* Rest_API.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F19FA1C0C2DF8004DC4F2 /* Rest_API.m */; };
-		7D918F551C049526003C996D /* FacebookSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D918F541C049526003C996D /* FacebookSignInViewController.m */; };
+		7D7BAA421C1070A8009FD371 /* AIVAHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BAA411C1070A8009FD371 /* AIVAHomeScreenViewController.m */; };
+		7D7BAA531C15AF93009FD371 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7BAA521C15AF93009FD371 /* MapKit.framework */; };
+		7D7BAA581C16A165009FD371 /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BAA561C16A165009FD371 /* ActivityIndicatorView.m */; };
+		7D7BAA591C16A165009FD371 /* ActivityIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BAA571C16A165009FD371 /* ActivityIndicatorView.xib */; };
+		7D7BAA5E1C16A6CB009FD371 /* APIClient_SignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BAA5D1C16A6CB009FD371 /* APIClient_SignUp.m */; };
+		7D7BAA611C16A878009FD371 /* APIClient_SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BAA601C16A878009FD371 /* APIClient_SignIn.m */; };
+		7D7BAA631C16BCFC009FD371 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7BAA621C16BCFC009FD371 /* CoreLocation.framework */; };
+		7D7BAA691C16D22A009FD371 /* FBLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BAA681C16D22A009FD371 /* FBLoginView.m */; };
+		7D7BAA6D1C16D26C009FD371 /* FBProfilePicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BAA6C1C16D26C009FD371 /* FBProfilePicView.m */; };
+		7D918F551C049526003C996D /* AIVAFacebookSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D918F541C049526003C996D /* AIVAFacebookSignInViewController.m */; };
 		7DC1898A1C045C6B005B8EB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189891C045C6B005B8EB9 /* main.m */; };
 		7DC1898D1C045C6B005B8EB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1898C1C045C6B005B8EB9 /* AppDelegate.m */; };
-		7DC189901C045C6B005B8EB9 /* LoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1898F1C045C6B005B8EB9 /* LoginScreenViewController.m */; };
+		7DC189901C045C6B005B8EB9 /* AIVALoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1898F1C045C6B005B8EB9 /* AIVALoginScreenViewController.m */; };
 		7DC189931C045C6B005B8EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189911C045C6B005B8EB9 /* Main.storyboard */; };
 		7DC189951C045C6B005B8EB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189941C045C6B005B8EB9 /* Images.xcassets */; };
 		7DC189981C045C6B005B8EB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189961C045C6B005B8EB9 /* LaunchScreen.xib */; };
 		7DC189A41C045C6B005B8EB9 /* AivaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189A31C045C6B005B8EB9 /* AivaTests.m */; };
 		7DC189DD1C04641E005B8EB9 /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189DB1C04641E005B8EB9 /* Common */; };
 		7DC189DE1C04641E005B8EB9 /* Welcomescreen in Resources */ = {isa = PBXBuildFile; fileRef = 7DC189DC1C04641E005B8EB9 /* Welcomescreen */; };
-		7DC189E21C046F30005B8EB9 /* EmailSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E11C046F30005B8EB9 /* EmailSignInViewController.m */; };
-		7DC189E61C04756C005B8EB9 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E51C04756C005B8EB9 /* ForgotPasswordViewController.m */; };
-		7DC189EA1C047B77005B8EB9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E91C047B77005B8EB9 /* SignUpViewController.m */; };
-		7DE2730E1C06D659008AB767 /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2730D1C06D659008AB767 /* UserInformation.m */; };
+		7DC189E21C046F30005B8EB9 /* AIVAEmailSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E11C046F30005B8EB9 /* AIVAEmailSignInViewController.m */; };
+		7DC189E61C04756C005B8EB9 /* AIVAForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E51C04756C005B8EB9 /* AIVAForgotPasswordViewController.m */; };
+		7DC189EA1C047B77005B8EB9 /* AIVASignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC189E91C047B77005B8EB9 /* AIVASignUpViewController.m */; };
+		7DE2730E1C06D659008AB767 /* AIVAUserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2730D1C06D659008AB767 /* AIVAUserInformation.m */; };
 		7DE46B661C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE46B651C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m */; };
 /* End PBXBuildFile section */
 
@@ -36,17 +44,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7D8F19F91C0C2DF8004DC4F2 /* Rest_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rest_API.h; sourceTree = "<group>"; };
-		7D8F19FA1C0C2DF8004DC4F2 /* Rest_API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rest_API.m; sourceTree = "<group>"; };
-		7D918F531C049526003C996D /* FacebookSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookSignInViewController.h; sourceTree = "<group>"; };
-		7D918F541C049526003C996D /* FacebookSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookSignInViewController.m; sourceTree = "<group>"; };
+		7D7BAA401C1070A8009FD371 /* AIVAHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVAHomeScreenViewController.h; sourceTree = "<group>"; };
+		7D7BAA411C1070A8009FD371 /* AIVAHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVAHomeScreenViewController.m; sourceTree = "<group>"; };
+		7D7BAA521C15AF93009FD371 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7D7BAA551C16A165009FD371 /* ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorView.h; sourceTree = "<group>"; };
+		7D7BAA561C16A165009FD371 /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorView.m; sourceTree = "<group>"; };
+		7D7BAA571C16A165009FD371 /* ActivityIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityIndicatorView.xib; sourceTree = "<group>"; };
+		7D7BAA5C1C16A6CB009FD371 /* APIClient_SignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient_SignUp.h; sourceTree = "<group>"; };
+		7D7BAA5D1C16A6CB009FD371 /* APIClient_SignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient_SignUp.m; sourceTree = "<group>"; };
+		7D7BAA5F1C16A878009FD371 /* APIClient_SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient_SignIn.h; sourceTree = "<group>"; };
+		7D7BAA601C16A878009FD371 /* APIClient_SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient_SignIn.m; sourceTree = "<group>"; };
+		7D7BAA621C16BCFC009FD371 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7D7BAA671C16D22A009FD371 /* FBLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginView.h; sourceTree = "<group>"; };
+		7D7BAA681C16D22A009FD371 /* FBLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginView.m; sourceTree = "<group>"; };
+		7D7BAA6B1C16D26C009FD371 /* FBProfilePicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProfilePicView.h; sourceTree = "<group>"; };
+		7D7BAA6C1C16D26C009FD371 /* FBProfilePicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBProfilePicView.m; sourceTree = "<group>"; };
+		7D918F531C049526003C996D /* AIVAFacebookSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVAFacebookSignInViewController.h; sourceTree = "<group>"; };
+		7D918F541C049526003C996D /* AIVAFacebookSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVAFacebookSignInViewController.m; sourceTree = "<group>"; };
 		7DC189841C045C6B005B8EB9 /* Aiva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC189881C045C6B005B8EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC189891C045C6B005B8EB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DC1898B1C045C6B005B8EB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC1898C1C045C6B005B8EB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7DC1898E1C045C6B005B8EB9 /* LoginScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginScreenViewController.h; sourceTree = "<group>"; };
-		7DC1898F1C045C6B005B8EB9 /* LoginScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginScreenViewController.m; sourceTree = "<group>"; };
+		7DC1898E1C045C6B005B8EB9 /* AIVALoginScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIVALoginScreenViewController.h; sourceTree = "<group>"; };
+		7DC1898F1C045C6B005B8EB9 /* AIVALoginScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIVALoginScreenViewController.m; sourceTree = "<group>"; };
 		7DC189921C045C6B005B8EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DC189941C045C6B005B8EB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7DC189971C045C6B005B8EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -55,14 +76,14 @@
 		7DC189A31C045C6B005B8EB9 /* AivaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AivaTests.m; sourceTree = "<group>"; };
 		7DC189DB1C04641E005B8EB9 /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
 		7DC189DC1C04641E005B8EB9 /* Welcomescreen */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Welcomescreen; sourceTree = "<group>"; };
-		7DC189E01C046F2F005B8EB9 /* EmailSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailSignInViewController.h; sourceTree = "<group>"; };
-		7DC189E11C046F30005B8EB9 /* EmailSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSignInViewController.m; sourceTree = "<group>"; };
-		7DC189E41C04756C005B8EB9 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
-		7DC189E51C04756C005B8EB9 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
-		7DC189E81C047B77005B8EB9 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		7DC189E91C047B77005B8EB9 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		7DE2730C1C06D659008AB767 /* UserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformation.h; sourceTree = "<group>"; };
-		7DE2730D1C06D659008AB767 /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
+		7DC189E01C046F2F005B8EB9 /* AIVAEmailSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVAEmailSignInViewController.h; sourceTree = "<group>"; };
+		7DC189E11C046F30005B8EB9 /* AIVAEmailSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVAEmailSignInViewController.m; sourceTree = "<group>"; };
+		7DC189E41C04756C005B8EB9 /* AIVAForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVAForgotPasswordViewController.h; sourceTree = "<group>"; };
+		7DC189E51C04756C005B8EB9 /* AIVAForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVAForgotPasswordViewController.m; sourceTree = "<group>"; };
+		7DC189E81C047B77005B8EB9 /* AIVASignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVASignUpViewController.h; sourceTree = "<group>"; };
+		7DC189E91C047B77005B8EB9 /* AIVASignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVASignUpViewController.m; sourceTree = "<group>"; };
+		7DE2730C1C06D659008AB767 /* AIVAUserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVAUserInformation.h; sourceTree = "<group>"; };
+		7DE2730D1C06D659008AB767 /* AIVAUserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVAUserInformation.m; sourceTree = "<group>"; };
 		7DE46B641C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+DefaultHeader.h"; sourceTree = "<group>"; };
 		7DE46B651C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+DefaultHeader.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7BAA631C16BCFC009FD371 /* CoreLocation.framework in Frameworks */,
+				7D7BAA531C15AF93009FD371 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +111,8 @@
 		7D17BB911C05809200C12FDD /* Login Screen */ = {
 			isa = PBXGroup;
 			children = (
-				7DC1898E1C045C6B005B8EB9 /* LoginScreenViewController.h */,
-				7DC1898F1C045C6B005B8EB9 /* LoginScreenViewController.m */,
+				7DC1898E1C045C6B005B8EB9 /* AIVALoginScreenViewController.h */,
+				7DC1898F1C045C6B005B8EB9 /* AIVALoginScreenViewController.m */,
 			);
 			name = "Login Screen";
 			sourceTree = "<group>";
@@ -103,11 +126,50 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		7D7BAA3F1C107081009FD371 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7D7BAA401C1070A8009FD371 /* AIVAHomeScreenViewController.h */,
+				7D7BAA411C1070A8009FD371 /* AIVAHomeScreenViewController.m */,
+			);
+			name = "Home Screen";
+			sourceTree = "<group>";
+		};
+		7D7BAA541C169969009FD371 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				7D7BAA551C16A165009FD371 /* ActivityIndicatorView.h */,
+				7D7BAA561C16A165009FD371 /* ActivityIndicatorView.m */,
+				7D7BAA571C16A165009FD371 /* ActivityIndicatorView.xib */,
+			);
+			name = Loader;
+			sourceTree = "<group>";
+		};
+		7D7BAA661C16D1EE009FD371 /* FB Login View */ = {
+			isa = PBXGroup;
+			children = (
+				7D7BAA671C16D22A009FD371 /* FBLoginView.h */,
+				7D7BAA681C16D22A009FD371 /* FBLoginView.m */,
+			);
+			name = "FB Login View";
+			sourceTree = "<group>";
+		};
+		7D7BAA6A1C16D22F009FD371 /* FB Profile Pic view */ = {
+			isa = PBXGroup;
+			children = (
+				7D7BAA6B1C16D26C009FD371 /* FBProfilePicView.h */,
+				7D7BAA6C1C16D26C009FD371 /* FBProfilePicView.m */,
+			);
+			name = "FB Profile Pic view";
+			sourceTree = "<group>";
+		};
 		7D8F19F51C0C2785004DC4F2 /* Rest API */ = {
 			isa = PBXGroup;
 			children = (
-				7D8F19F91C0C2DF8004DC4F2 /* Rest_API.h */,
-				7D8F19FA1C0C2DF8004DC4F2 /* Rest_API.m */,
+				7D7BAA5C1C16A6CB009FD371 /* APIClient_SignUp.h */,
+				7D7BAA5D1C16A6CB009FD371 /* APIClient_SignUp.m */,
+				7D7BAA5F1C16A878009FD371 /* APIClient_SignIn.h */,
+				7D7BAA601C16A878009FD371 /* APIClient_SignIn.m */,
 			);
 			name = "Rest API";
 			sourceTree = "<group>";
@@ -115,6 +177,7 @@
 		7D8F19FC1C0D90EB004DC4F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7D7BAA3F1C107081009FD371 /* Home Screen */,
 				7D17BB911C05809200C12FDD /* Login Screen */,
 				7DC189E71C047B5B005B8EB9 /* Sign Up */,
 				7DC189DF1C046F09005B8EB9 /* Email Sign In */,
@@ -129,6 +192,7 @@
 			children = (
 				7DE2730F1C070B39008AB767 /* Headers */,
 				7D8F19F51C0C2785004DC4F2 /* Rest API */,
+				7D7BAA541C169969009FD371 /* Loader */,
 			);
 			name = "Network Services";
 			sourceTree = "<group>";
@@ -153,8 +217,10 @@
 		7D918F521C0494EA003C996D /* Facebook Sign In */ = {
 			isa = PBXGroup;
 			children = (
-				7D918F531C049526003C996D /* FacebookSignInViewController.h */,
-				7D918F541C049526003C996D /* FacebookSignInViewController.m */,
+				7D918F531C049526003C996D /* AIVAFacebookSignInViewController.h */,
+				7D918F541C049526003C996D /* AIVAFacebookSignInViewController.m */,
+				7D7BAA6A1C16D22F009FD371 /* FB Profile Pic view */,
+				7D7BAA661C16D1EE009FD371 /* FB Login View */,
 			);
 			name = "Facebook Sign In";
 			sourceTree = "<group>";
@@ -162,6 +228,8 @@
 		7DC1897B1C045C6B005B8EB9 = {
 			isa = PBXGroup;
 			children = (
+				7D7BAA621C16BCFC009FD371 /* CoreLocation.framework */,
+				7D7BAA521C15AF93009FD371 /* MapKit.framework */,
 				7DC189861C045C6B005B8EB9 /* Aiva */,
 				7DC189A01C045C6B005B8EB9 /* AivaTests */,
 				7DC189851C045C6B005B8EB9 /* Products */,
@@ -230,8 +298,8 @@
 		7DC189DF1C046F09005B8EB9 /* Email Sign In */ = {
 			isa = PBXGroup;
 			children = (
-				7DC189E01C046F2F005B8EB9 /* EmailSignInViewController.h */,
-				7DC189E11C046F30005B8EB9 /* EmailSignInViewController.m */,
+				7DC189E01C046F2F005B8EB9 /* AIVAEmailSignInViewController.h */,
+				7DC189E11C046F30005B8EB9 /* AIVAEmailSignInViewController.m */,
 			);
 			name = "Email Sign In";
 			sourceTree = "<group>";
@@ -239,8 +307,8 @@
 		7DC189E31C04754F005B8EB9 /* Forgot Password */ = {
 			isa = PBXGroup;
 			children = (
-				7DC189E41C04756C005B8EB9 /* ForgotPasswordViewController.h */,
-				7DC189E51C04756C005B8EB9 /* ForgotPasswordViewController.m */,
+				7DC189E41C04756C005B8EB9 /* AIVAForgotPasswordViewController.h */,
+				7DC189E51C04756C005B8EB9 /* AIVAForgotPasswordViewController.m */,
 			);
 			name = "Forgot Password";
 			sourceTree = "<group>";
@@ -248,8 +316,8 @@
 		7DC189E71C047B5B005B8EB9 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				7DC189E81C047B77005B8EB9 /* SignUpViewController.h */,
-				7DC189E91C047B77005B8EB9 /* SignUpViewController.m */,
+				7DC189E81C047B77005B8EB9 /* AIVASignUpViewController.h */,
+				7DC189E91C047B77005B8EB9 /* AIVASignUpViewController.m */,
 			);
 			name = "Sign Up";
 			sourceTree = "<group>";
@@ -265,8 +333,8 @@
 		7DE2730B1C06D625008AB767 /* User Info */ = {
 			isa = PBXGroup;
 			children = (
-				7DE2730C1C06D659008AB767 /* UserInformation.h */,
-				7DE2730D1C06D659008AB767 /* UserInformation.m */,
+				7DE2730C1C06D659008AB767 /* AIVAUserInformation.h */,
+				7DE2730D1C06D659008AB767 /* AIVAUserInformation.m */,
 			);
 			name = "User Info";
 			sourceTree = "<group>";
@@ -363,6 +431,7 @@
 				7DC189931C045C6B005B8EB9 /* Main.storyboard in Resources */,
 				7DC189DE1C04641E005B8EB9 /* Welcomescreen in Resources */,
 				7DC189981C045C6B005B8EB9 /* LaunchScreen.xib in Resources */,
+				7D7BAA591C16A165009FD371 /* ActivityIndicatorView.xib in Resources */,
 				7DC189951C045C6B005B8EB9 /* Images.xcassets in Resources */,
 				7DC189DD1C04641E005B8EB9 /* Common in Resources */,
 			);
@@ -382,15 +451,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DC189901C045C6B005B8EB9 /* LoginScreenViewController.m in Sources */,
-				7DE2730E1C06D659008AB767 /* UserInformation.m in Sources */,
-				7D8F19FB1C0C2DF8004DC4F2 /* Rest_API.m in Sources */,
-				7DC189E21C046F30005B8EB9 /* EmailSignInViewController.m in Sources */,
-				7DC189EA1C047B77005B8EB9 /* SignUpViewController.m in Sources */,
+				7D7BAA691C16D22A009FD371 /* FBLoginView.m in Sources */,
+				7DC189901C045C6B005B8EB9 /* AIVALoginScreenViewController.m in Sources */,
+				7DE2730E1C06D659008AB767 /* AIVAUserInformation.m in Sources */,
+				7D7BAA611C16A878009FD371 /* APIClient_SignIn.m in Sources */,
+				7D7BAA6D1C16D26C009FD371 /* FBProfilePicView.m in Sources */,
+				7DC189E21C046F30005B8EB9 /* AIVAEmailSignInViewController.m in Sources */,
+				7D7BAA5E1C16A6CB009FD371 /* APIClient_SignUp.m in Sources */,
+				7DC189EA1C047B77005B8EB9 /* AIVASignUpViewController.m in Sources */,
 				7DE46B661C081A2000D8A9C5 /* NSMutableURLRequest+DefaultHeader.m in Sources */,
-				7D918F551C049526003C996D /* FacebookSignInViewController.m in Sources */,
+				7D918F551C049526003C996D /* AIVAFacebookSignInViewController.m in Sources */,
+				7D7BAA581C16A165009FD371 /* ActivityIndicatorView.m in Sources */,
 				7DC1898D1C045C6B005B8EB9 /* AppDelegate.m in Sources */,
-				7DC189E61C04756C005B8EB9 /* ForgotPasswordViewController.m in Sources */,
+				7D7BAA421C1070A8009FD371 /* AIVAHomeScreenViewController.m in Sources */,
+				7DC189E61C04756C005B8EB9 /* AIVAForgotPasswordViewController.m in Sources */,
 				7DC1898A1C045C6B005B8EB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
