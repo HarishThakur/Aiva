@@ -27,14 +27,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    myMapView.showsUserLocation = YES;
-//    myMapView.showsBuildings = YES;
-//    
-//    _locationManager = [CLLocationManager new];
-//    if([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-//        [_locationManager requestAlwaysAuthorization];
-//    }
-//    [_locationManager startUpdatingLocation];
+    myMapView.showsUserLocation = YES;
+    myMapView.showsBuildings = YES;
+    
+    _locationManager = [CLLocationManager new];
+    if([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [_locationManager requestAlwaysAuthorization];
+    }
+    [_locationManager startUpdatingLocation];
     
     self.searchBar.delegate = self;
     geoCoder = [[CLGeocoder alloc]init];
@@ -115,7 +115,7 @@
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error)
      {
          [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-         if (response.mapItems.count == 0 )
+         if (response.mapItems.count == 0)
          {
              NSLog(@"No Matches Found");
          }

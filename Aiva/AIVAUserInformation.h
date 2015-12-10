@@ -9,14 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface AIVAUserInformation : NSObject {
-    NSString *emailAddress;
-    NSString *password;
-    NSString *retypePassword;
-    NSString *promoCode;
-    NSString *isLoginSuccess;
+//    NSString *emailAddress;
+//    NSString *password;
+//    NSString *retypePassword;
+//    NSString *promoCode;
 }
 
-@property (retain,nonatomic) NSString *emailAddress,*password,*retypePassword,*promoCode,*isLoginSuccess;
+@property (retain,nonatomic) NSString *emailAddress,*password,*retypePassword,*promoCode;
 
 + (AIVAUserInformation *)sharedDetails;
 

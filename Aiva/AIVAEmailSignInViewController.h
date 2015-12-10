@@ -10,7 +10,9 @@
 #import "AIVALoginScreenViewController.h"
 #import "AIVAUserInformation.h"
 #import "AIVAHomeScreenViewController.h"
-#import "APIClient_SignIn.h"
+#import "APIClient.h"
+#import "APIClient+SignInAPI.h"
+
 
 @interface AIVAEmailSignInViewController : UIViewController {
     NSMutableData *mutableData;

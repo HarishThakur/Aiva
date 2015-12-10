@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "AIVAFacebookSignInViewController.h"
 #import "AIVAUserInformation.h"
-#import "APIClient_SignUp.h"
+#import "APIClient.h"   
+#import "APIClient+SignUpAPI.h"
+#import "AIVAHomeScreenViewController.h"
 #import "ActivityIndicatorView.h"
 
 

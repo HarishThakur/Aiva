@@ -9,7 +9,7 @@
 #import "AIVAUserInformation.h"
 
 @implementation AIVAUserInformation
-@synthesize emailAddress,password,retypePassword,promoCode,isLoginSuccess;
+//@synthesize emailAddress,password,retypePassword,promoCode,isLoginSuccess;
 
 /**
  *  Created singleton class for UserInformation
@@ -32,11 +32,10 @@
  */
 - (id)init {
     if (self = [super init]) {
-        emailAddress = [[NSString alloc]init];
-        password     = [[NSString alloc]init];
-        retypePassword = [[NSString alloc]init];
-        promoCode  = [[NSString alloc]init];
-        isLoginSuccess = [[NSString alloc]init];
+//        emailAddress = [[NSString alloc]init];
+//        password     = [[NSString alloc]init];
+//        retypePassword = [[NSString alloc]init];
+//        promoCode  = [[NSString alloc]init];
     }
     return self;
 }

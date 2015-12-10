@@ -1,19 +1,20 @@
 //
-//  APIClient_SignUp.m
+//  Rest_API.m
 //  Aiva
 //
-//  Created by Harish Singh on 08/12/15.
+//  Created by Harish Singh on 30/11/15.
 //  Copyright (c) 2015 Sourcebits Technologies. All rights reserved.
 //
 
-#import "APIClient_SignUp.h"
+#import "Rest_API_SignUp.h"
+#import "ActivityIndicatorView.h"
 
-@implementation APIClient_SignUp
+@implementation Rest_API_SignUp
 
 -(id) init {
     self = [super init];
     if (self) {
-        self.userInformation = [AIVAUserInformation sharedDetails];
+       self.userInformation = [AIVAUserInformation sharedDetails];
     }
     return self;
 }
@@ -23,7 +24,7 @@
  *
  *  @param method will be either GET or POST as required
  */
--(void) sendSignUpDataToServer : (NSString *) method{
+-(void) sendSignUpDataToServer : (NSString *) method  {
     NSMutableDictionary *signUpParameters = [[NSMutableDictionary alloc]init];
     [signUpParameters setObject:self.userInformation.emailAddress forKey:@"Email"];
     [signUpParameters setObject:self.userInformation.password forKey:@"Password"];
@@ -32,6 +33,7 @@
     if(self.userInformation.emailAddress.length > 0 && self.userInformation.password.length > 0) {
         
         [self showAlertMessage:@"" :@"Getting response from server..."];
+        
         NSURL *url = nil;
         NSMutableURLRequest *request = nil;
         
@@ -68,18 +70,18 @@
     
     if ([response respondsToSelector:@selector(statusCode)])
     {
-        int statusCode = [((NSHTTPURLResponse *)response) statusCode];
+        long statusCode = [((NSHTTPURLResponse *)response) statusCode];
         if (statusCode == 202)
         {
-            [self showAlertMessage:@"Signed Up Successfully" :@"Request accepted, and queued for execution..."];
+            [self showAlertMessage:@"Signed Up Successfully" :@"Request accepted, and queued for execution"];
         }
         else if (statusCode == 403)
         {
-            [self showAlertMessage:@"Forbidden Status" :@"This email-id is already registered. Please try with some other valid email-id."];
+            [self showAlertMessage:@"Forbidden Status" :@"This email-id is already registered. Please try with some other valid email-id"];
         }
         else if (statusCode == 500)
         {
-            [self showAlertMessage:@"Error 500" :@"Internal Server Error..."];
+            [self showAlertMessage:@"Error 500" :@"Internal Server Error"];
         }
     }
 }
@@ -106,8 +108,10 @@
  */
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSString *responseStringWithEncoded = [[NSString alloc] initWithData: mutableData encoding:NSUTF8StringEncoding];
-    NSLog(@"Response from Server : %@", responseStringWithEncoded);
+    //NSLog(@"Response from Server : %@", responseStringWithEncoded);
     NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[responseStringWithEncoded dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    NSLog(@"Response from Server : %@", attrStr);
+
 }
 
 /**
@@ -129,5 +133,54 @@
 {
     [alert dismissWithClickedButtonIndex:0 animated:YES];
 }
+
+
+
+//+(id) sharedAPIClient {
+//    static Rest_API *sharedMyInstance = nil;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        sharedMyInstance = [[self alloc] init];
+//        sharedMyInstance = [sharedMyInstance initWithBaseUrl:[self baseUrl]];
+//    });
+//    return sharedMyInstance;
+//}
+//
+//-(id)initWithBaseUrl: (NSURL *) baseUrl {
+//    self = [super init];
+//    return self;
+//}
+//
+//+(NSURL *) baseUrl {
+//    return [NSURL URLWithString:[NSString stringWithFormat:@"http://frontieredev.cloudapp.net/api/user"]];
+//}
+//
+//
+//#pragma mark API method to hit the server
+//
+//- (void)POST:(NSString *)apiName withParameters:(NSDictionary *)parameters withCompletionHandler:(void (^)(NSDictionary *, NSURLResponse *, NSError *))completionHandler {
+//    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+//    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:defaultConfigObject delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+//    NSString *urlString = [NSString stringWithFormat:@"%@/%@", BASEURL, apiName];
+//    NSURL *url = [NSURL URLWithString:urlString];
+//    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL: url];
+//
+//    NSData *parametersData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+//    [urlRequest setHTTPBody:parametersData];
+//    [urlRequest setHTTPMethod:@"POST"];
+//    [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+//    
+//    NSURLSessionDataTask * dataTask =[defaultSession dataTaskWithRequest :urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//        NSDictionary *responseData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+//        completionHandler(responseData, response, error);
+//    }];
+//    
+//    [dataTask resume];
+//    
+//}
+
+
+
+
 
 @end

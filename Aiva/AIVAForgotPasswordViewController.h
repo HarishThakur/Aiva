@@ -11,7 +11,6 @@
 
 @interface AIVAForgotPasswordViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIWebView *facebookLoginWebView;
 @property AIVAEmailSignInViewController *emailSignInViewController;
 @property (weak, nonatomic) IBOutlet UITextField *enterEmailTextField;
 

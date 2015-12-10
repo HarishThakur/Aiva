@@ -84,13 +84,17 @@ NSMutableData *mutableData;
     self.userInformation.password = self.passwordTextField.text;
     self.userInformation.retypePassword = self.retypePasswordTextField.text;
     
+    NSMutableDictionary *signUpParameters = [[NSMutableDictionary alloc]init];
+    [signUpParameters setObject:self.userInformation.emailAddress forKey:@"Email"];
+    [signUpParameters setObject:self.userInformation.password forKey:@"Password"];
+    //[signUpParameters setObject:@"956874" forKey:@"ReferralCode"];
+
     if ([self.userInformation.emailAddress isEqualToString:@""] || [self.userInformation.password isEqualToString:@""] || [self.userInformation.retypePassword isEqualToString:@""]) {
         [self showValidationLabel];
         [self.promoCodeTextField resignFirstResponder];
     }
     else {
-        if (![self validateEmail:self.userInformation.emailAddress])
-        {
+        if (![self validateEmail:self.userInformation.emailAddress]) {
             self.validateLabel.text = @"Please enter valid email id";
             [self showValidationLabel];
         }
@@ -100,9 +104,42 @@ NSMutableData *mutableData;
         }
         else {
             [self hideValidationLabel];
-            [[[APIClient_SignUp alloc] init] sendSignUpDataToServer:@"POST"];
+            [self getSignUpResponseFromServer:@"POST" withParameters: signUpParameters];
         }
     }
+}
+
+-(void) getSignUpResponseFromServer : (NSString *)method withParameters: (NSMutableDictionary *)parameters
+{
+    ActivityIndicatorView *activityView = [[NSBundle mainBundle] loadNibNamed:@"ActivityIndicatorView" owner:self options:nil][0];
+    [self.view addSubview:activityView];
+    activityView.center = self.view.center;
+    
+    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+    [[APIClient sharedAPIClient] signUpWithUserDetails:parameters WithCompletionHandler:^(NSDictionary *responseData, NSURLResponse *response, NSError *error)
+     {
+         if ( [responseData[@"User"][@"Email"] isEqualToString: self.userInformation.emailAddress] ) {
+             AIVAHomeScreenViewController *homeScreenVC = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"HomeScreenViewController"];
+             [self.navigationController pushViewController:homeScreenVC animated:YES];
+             self.emailAddressTextField.text = @"";
+             self.passwordTextField.text = @"";
+             self.retypePasswordTextField.text = @"";
+         }
+         else if ( [responseData[@"Status"] isEqualToString: @"EmailIDRegistered"])
+         {
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                            message:responseData[@"Message"]
+                                                            delegate:self
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+             [alert show];
+         }
+         
+         
+         NSLog(@"Server Response %@", responseData);
+         [activityView setHidden:YES];
+         [[UIApplication sharedApplication]endIgnoringInteractionEvents];
+     }];
 }
 
 #pragma mark - Move Next UITextField

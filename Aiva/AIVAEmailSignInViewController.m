@@ -15,6 +15,9 @@
 
 @implementation AIVAEmailSignInViewController
 
+/**
+ *  Initializing modal class, controller and setting delegate for text fields
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -60,7 +63,6 @@
             [self showValidationLabel];
             [self.enterPasswordTextField resignFirstResponder];
         }
-        
     }
     return YES;
 }
@@ -83,11 +85,15 @@
 }
 
 - (IBAction)loginInWithEmail:(id)sender {
-    self.userInformation.isLoginSuccess = @"NO";
     self.validateLabel.text = @"Please enter the required fields";
     self.validateLabel.textAlignment = NSTextAlignmentCenter;
     self.userInformation.emailAddress = self.enterEmailIDTextField.text;
     self.userInformation.password = self.enterPasswordTextField.text;
+    
+    NSMutableDictionary *signInParameters = [[NSMutableDictionary alloc]init];
+    [signInParameters setObject:self.userInformation.emailAddress forKey:@"Email"];
+    [signInParameters setObject:self.userInformation.password forKey:@"Password"];
+
     
     if ([self.userInformation.emailAddress isEqualToString:@""] || [self.userInformation.password isEqualToString:@""]) {
         [self showValidationLabel];
@@ -99,92 +105,40 @@
          [self showValidationLabel];
     }
     else {
-        @try {
-            NSMutableDictionary *signInParameters = [[NSMutableDictionary alloc]init];
-            [signInParameters setObject:self.userInformation.emailAddress forKey:@"Email"];
-            [signInParameters setObject:self.userInformation.password forKey:@"Password"];
-            
-            NSURL *url=[NSURL URLWithString:URL];
-            NSData *postData = [NSJSONSerialization dataWithJSONObject:signInParameters options:0 error:nil];
-            NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
-            NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-            [request setURL:url];
-            [request setDefaultHeader];
-            [request setHTTPMethod:@"POST"];
-            [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
-            [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-            [request setHTTPBody:postData];
-            
-            
-            NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-            if( connection ) {
-                mutableData = [NSMutableData new];
-            } else {
-                [self showAlertMessage:@"" :NO_CONNECTION];
-            }
-        }
-        @catch (NSException * e) {
-            NSLog(@"Exception: %@", e);
-            NSLog(@"Login Failed!");
-        }
+        [self getSigninResponseFromServer: @"POST" withParameters:signInParameters];
     }
 }
 
 
-/**
- *  Delegate method to check whether NSURLConnection recieve response
- */
--(void) connection:(NSURLConnection *) connection didReceiveResponse:(NSURLResponse *)response
+-(void) getSigninResponseFromServer:(NSString *)method withParameters:(NSMutableDictionary *)parameters
 {
-    [mutableData setLength:0];
     
-    if ([response respondsToSelector:@selector(statusCode)])
-    {
-        long statusCode = [((NSHTTPURLResponse *)response) statusCode];
-        if (statusCode == 202)
+    ActivityIndicatorView *activityView = [[NSBundle mainBundle] loadNibNamed:@"ActivityIndicatorView" owner:self options:nil][0];
+    [self.view addSubview:activityView];
+    activityView.center = self.view.center;
+    
+    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+    [[APIClient sharedAPIClient] loginWithUserDetails:parameters WithCompletionHandler:^(NSDictionary *responseData, NSURLResponse *response, NSError *error) {
+        if ( [responseData[@"User"][@"Email"] isEqualToString: self.userInformation.emailAddress] ) {
+            AIVAHomeScreenViewController *homeScreenVC = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"HomeScreenViewController"];
+            [self.navigationController pushViewController:homeScreenVC animated:YES];
+            self.enterEmailIDTextField.text = @"";
+            self.enterPasswordTextField.text = @"";
+        }
+        else if ([responseData[@"Status"] isEqualToString: @"InvalidEmailOrPassowrd"])
         {
-            [self showAlertMessage:@"Signed In Successfully" :@""];
-            
-            AIVAHomeScreenViewController *viewController = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"HomeScreenViewController"];
-            [self.navigationController pushViewController:viewController animated:YES];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                            message:responseData[@"Message"]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }
-        else if (statusCode == 401){
-            [self showAlertMessage:@"Authentication failure!!!" :@"Please pass valid Authentication details."];
-        }
-        else if (statusCode == 403)
-        {
-            [self showAlertMessage:@"Forbidden Status" :@"Incorrect Email ID or Password"];
-        }
-        else if (statusCode == 500)
-        {
-            [self showAlertMessage:@"Error 500" :@"Internal Server Error"];
-        }
-    }
-}
 
-/**
- *  Delegate method to check whether NSURLConnection recieve data
- */
--(void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    [mutableData appendData:data];
-}
-
-/**
- *  Delegate method to check whether NSURLConnection fail to recieve data
- */
--(void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    NSLog(@"error description %@",error.description);
-    [self showAlertMessage:@"" :NO_CONNECTION];
-    return;
-}
-
-/**
- *  Delegate method to check NSURLConnection finish loading
- */
--(void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSDictionary *loginDetails = [NSJSONSerialization JSONObjectWithData:mutableData options:0 error:nil];
-    NSLog(@"Response from Server : %@", loginDetails);
+        NSLog(@"response data %@", responseData);
+        [activityView setHidden:YES];
+        [[UIApplication sharedApplication]endIgnoringInteractionEvents];
+    }];
 }
 
 /**
